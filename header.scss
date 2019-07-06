@@ -1,0 +1,12 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    @include flexCenter();
+    background: orange;
+    color: whitesmoke;
+    text-transform: uppercase;
+}

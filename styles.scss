@@ -1,0 +1,73 @@
+$primaryP:rgb(173, 223, 214);
+
+$textColor: blue;
+
+$marginRight: 500px;
+
+$divFont: 25px;
+
+@import './header';
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    background: linen;
+    font-family: 'Stylish', sans-serif;
+}
+.styleP {
+    font-size:20px;
+    text-align: center;
+}
+
+div{
+    background: linen;
+    text-align: center;
+    &:hover{
+        background: purple;
+        color: white;
+    }
+
+}
+#headingInfo{
+    font-size: $divFont;
+    font-variant: small-caps;
+}
+
+#bodyContent{
+    @include flexCenter();
+    background: $primaryP;
+    font-size: $divFont;
+    margin: 0;
+    color:purple;
+}
+.frame{
+    margin-right: $marginRight;
+}
+
+#P2{
+    background: lightgrey;
+    font-size: $divFont;
+} 
+
+.frame2{
+    margin-left: $marginRight;
+}
+
+#P3{
+    background: lightcyan;
+    font-size: $divFont;
+    margin-top : 0;
+    color: maroon;
+}
+
+#P4{
+    text-align: center;
+    transition: transform .5s,opacity .5s;
+    font-size:40px;
+}
+
+#P4:hover{
+    font-size:50px;
+}
